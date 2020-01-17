@@ -13,7 +13,7 @@ abstract class _PokeStoreBase with Store {
   PokeModel pokemon;
 
   @action
-  fetchPokemonList() {
+  void fetchPokemonList() {
     pokemon = null;
     loadPokemon().then((result) {
       pokemon = result;
